@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-str = "Holberton School"
-print(F'{str}{str}{str}\n')
+str = "Holberton School\n"
+print(F'{str}{str}{str}')
 print(f'str[:9]')
