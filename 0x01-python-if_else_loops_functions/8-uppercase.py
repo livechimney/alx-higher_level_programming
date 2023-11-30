@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-def uppercase(str):
-    for iterator in str:
-        temp = iterator
-        if ord(temp) >= 97 and ord(temp) <= 122:
-            temp = chr(ord(iterator) - 32)
-            print("{}".format(temp), end='')
-    print()
+def uppercase(input_string):
+    uppercase_string = ""
+    for char in input_string:
+        if char.islower():
+            uppercase_string += char.upper()
+        else:
+            uppercase_string += char
+    print(uppercase_string)
+
